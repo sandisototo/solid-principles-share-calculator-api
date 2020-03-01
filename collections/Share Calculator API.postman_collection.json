@@ -1,0 +1,80 @@
+{
+	"id": "4fe81480-73ed-9292-43c7-0f27b5c1b447",
+	"name": "Share Calculator API",
+	"description": "",
+	"order": [
+		"8db493ad-c504-938f-fe7a-b095c4ba7258"
+	],
+	"folders": [
+		{
+			"id": "2d2becc0-d9a8-229f-3b7f-9574cd2aa7f9",
+			"name": "Calculator",
+			"description": "",
+			"order": [
+				"42583a5c-a538-73b3-02af-540d5b33fd9c"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "4fe81480-73ed-9292-43c7-0f27b5c1b447"
+		}
+	],
+	"folders_order": [
+		"2d2becc0-d9a8-229f-3b7f-9574cd2aa7f9"
+	],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "42583a5c-a538-73b3-02af-540d5b33fd9c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:3000/calculate/",
+			"folder": "2d2becc0-d9a8-229f-3b7f-9574cd2aa7f9",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583080532235,
+			"name": "Calculate",
+			"description": "The the share quantity calculator POST endpoint that calculates the number of share a person can buy for a given amount of money.\r\n\r\nThis will then return a JSON object along with a 200. if amount entered is <= 0 OR amount is < than current share price value, then a status of 400 will be returned with a string message that indicates why the calculation could not be made.\r\nfound.\r\n\r\n`[POST] http://127.0.0.1:3000/calculate/`\r\n\r\nPayload:\r\n```\r\njson\r\n{\r\n\t\"amount\": 5000\r\n}\r\n```\r\n\r\nResponse 200\r\n```\r\njson\r\n{\r\n    \"price\": 1299.99,\r\n    \"quantity\": 3.08\r\n}\r\n```\r\n\r\nResponse 400 (if amount < current share value/price)\r\n```string\r\n\"The amount you entered is insufficient to buy any shares at the moment, current share price is R 1299.99\"\r\n```\r\nOR (if amount is <= 0)\r\n```\r\n\"The amount to buy shares cannot be less or = to 0\"\r\n``",
+			"collectionId": "4fe81480-73ed-9292-43c7-0f27b5c1b447",
+			"responses": [],
+			"rawModeData": "{\n\t\"amount\": -1\n}"
+		},
+		{
+			"id": "8db493ad-c504-938f-fe7a-b095c4ba7258",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:41900/health/health",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583071817671,
+			"name": "Health",
+			"description": "You can query the health status of the application conveniently on the following endpoint.\r\n\r\n`[GET] http://127.0.0.1:3000/health/health`\r\n\r\nResponse 200\r\n```json\r\n{\r\n  \"healthController\": \"healthy\",\r\n  \"databaseConnection\": \"healthy\"\r\n}\r\n```",
+			"collectionId": "4fe81480-73ed-9292-43c7-0f27b5c1b447",
+			"responses": []
+		}
+	]
+}
