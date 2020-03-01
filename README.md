@@ -66,7 +66,7 @@ reached. As such, the application is considered healthy if the database and heal
 #### Get Health
 You can query the health status of the application conveniently on the following endpoint.
 
-`[GET] /health/health`
+`[GET] http://127.0.0.1:3000/health/health`
 
 Response 200
 ```json
