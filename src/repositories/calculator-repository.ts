@@ -45,7 +45,7 @@ class CalculatorRepository {
       if (amont <= 0) throw new Error('The amount to buy shares cannot be less or = to 0')
       if (amont < this.currentSharePrice) throw new Error(`The amount you entered is insufficient to buy any shares at the moment, current share price is R ${this.currentSharePrice}`)
       
-      return parseFloat((amount / this.currentSharePrice).toFixed(0))
+      return parseFloat((amount / this.currentSharePrice).toFixed(2))
     }
     /**
      * Tap and log the response and return the calculation results
