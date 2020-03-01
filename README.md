@@ -6,7 +6,7 @@ A simple share calculator API that will return the number of share a user can bu
 - [Endpoints](#endpoints)
     - [Postman Workspaces](#postman-workspaces)
     - [Calculate](#calculate)
-        - [Calculate for a given amount](#get-a-contact)
+        - [Calculate for a given amount](#calculate)
     - [Health](#health)
         - [Get Health](#get-health)
 - [Environment Variables](#environment-variables)
