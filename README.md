@@ -29,7 +29,6 @@ import these workspaces and test the below API endpoints for yourself.
 This is the share quantity calculator POST endpoint that calculates the number of share a person can buy for a given amount of money.
 
 This will then return a JSON object along with a 200. if amount entered is <= 0 OR amount is < than current share price value, then a status of 400 will be returned with a string message that indicates why the calculation could not be made.
-found.
 
 `[POST] http://127.0.0.1:3000/calculate/`
 
@@ -61,12 +60,12 @@ OR (if amount is <= 0)
 
 #### Health
 The objective of the health endpoint is to ensure that the external dependencies of the application are healthy and be
-reached. As such, the application is considered healthy if the database and health endpoint can be reached.
+reached. As such, the application is considered healthy if the Node server and health endpoint can be reached.
 
 #### Get Health
 You can query the health status of the application conveniently on the following endpoint.
 
-`[GET] http://127.0.0.1:3000/health/health`
+`[GET] http://127.0.0.1:3000/health/`
 
 Response 200
 ```json
