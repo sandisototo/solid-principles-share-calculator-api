@@ -1,5 +1,5 @@
 # Share Calculator API
-A simple share calculator API that will return the number of share a user can buy
+A simple share calculator API that will return the number of share a user can buy for a given amount of money.
 
 ## Table of Contents
 - [Get Started](#get-started)
