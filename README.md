@@ -1,26 +1,24 @@
 # Share Calculator API
-A simple share calculator API that will return the number of share a user can buy for a specific amount of money.
+A simple share calculator API that will return the number of shares a user can buy for a specific amount of money.
 
 ## Table of Contents
 - [Get Started](#get-started)
+- [Postman Collection](#postman-collection)
 - [Endpoints](#endpoints)
-    - [Postman Workspaces](#postman-workspaces)
     - [Calculate](#calculate)
-        - [Calculate for a given amount](#calculate)
     - [Health](#health)
-        - [Get Health](#get-health)
 - [Environment Variables](#environment-variables)
 
 ## Get Started
 You can get started with your own locally hosted instance of this application quite quickly and painlessly.
 ```bash
-$ git clone https://github.com/sandisototo/cpt-share-calculator-api.git
-$ cd cpt-share-calculator-api
+$ git clone https://github.com/sandisototo/solid-principles-share-calculator-api.git
+$ cd solid-principles-share-calculator-api
 $ npm i
 $ npm start
 ```
 
-#### Postman Workspaces
+#### Postman Collection
 You can find workspaces for Postman within this project under `collections`. You'll be able to
 import these workspaces and test the below API endpoints for yourself.
 
